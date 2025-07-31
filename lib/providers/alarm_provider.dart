@@ -4,6 +4,12 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../models/alarm.dart';
 
 class AlarmProvider extends ChangeNotifier {
+  final predefinedSounds = [
+    'birds.wav',
+    'rooster.wav',
+    'wake_up.wav',
+  ];
+
   List<Alarm> _alarms = [];
 
   List<Alarm> get alarms => _alarms;
